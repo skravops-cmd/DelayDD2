@@ -1,0 +1,67 @@
+# =========================
+# JUCE / C++ build outputs
+# =========================
+Builds/
+build/
+**/build/
+**/intermediate/
+
+# Standalone binaries
+ChorusCE2
+*.exe
+*.app
+
+# Plugin formats (generated)
+*.vst3/
+*.vst/
+*.lv2/
+*.clap/
+*.component/
+*.a
+*.so
+*.dylib
+
+# JUCE helper binaries
+juce_*_helper
+juce_simple_binary_builder
+juce_linux_subprocess_helper
+
+# =========================
+# IDE / Editor files
+# =========================
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Xcode
+*.xcworkspace
+*.xcodeproj
+DerivedData/
+
+# Visual Studio
+.vs/
+
+# =========================
+# OS / misc
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary / cache files
+# =========================
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# =========================
+# JUCE auto-generated code
+# =========================
+JuceLibraryCode/
