@@ -2,10 +2,10 @@
 
 Dd2AudioProcessorEditor::Dd2AudioProcessorEditor
 (
-    Dd2AudioProcessor&,
+    Dd2AudioProcessor& processor,
     juce::AudioProcessorValueTreeState& apvts
 )
-    : AudioProcessorEditor (nullptr),
+    : AudioProcessorEditor (&processor), // MUST NOT be nullptr
       timeAttach (apvts, "TIME", timeSlider),
       fbAttach   (apvts, "FB", feedbackSlider),
       mixAttach  (apvts, "MIX", mixSlider)
